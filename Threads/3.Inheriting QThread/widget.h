@@ -7,6 +7,7 @@
 #include <QString>
 #include <QMessageBox>
 #include "mythread.h"
+#include "mythread2.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -23,7 +24,9 @@ public:
 private slots:
     void currentData(int value);
     void finishedThread();
+    void finishedThread2();
     void Done(QString text);
+    void setDial(int value);
 
     void startClicked();
     void infoClicked();
@@ -31,5 +34,6 @@ private slots:
 private:
     Ui::Widget *ui;
     MyThread *thread;
+    MyThread2 *thread2;
 };
 #endif // WIDGET_H
