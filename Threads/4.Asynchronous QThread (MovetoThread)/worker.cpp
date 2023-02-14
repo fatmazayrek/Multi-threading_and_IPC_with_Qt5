@@ -17,7 +17,6 @@ void Worker::doWork()
 
     connect(timer, &QTimer::timeout, [=]()
     {
-//        qDebug() << "Thread is running: " << QThread::currentThreadId();
         emit WriteText(QString("Thread is running:"));
     });
 
