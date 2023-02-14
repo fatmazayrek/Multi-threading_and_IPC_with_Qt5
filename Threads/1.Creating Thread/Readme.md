@@ -6,18 +6,32 @@ In this example, I did a simple Widget application which contains only one butto
 
 If you click this button then Output on the consol will be 
  Main Thread id:  0x5d10
+ 
  Thread id:  0x6f80 :  0
+ 
  Thread id:  0x6f80 :  1
+ 
  Thread id:  0x6f80 :  2
+ 
  Thread id:  0x6f80 :  3
+ 
  Thread id:  0x6f80 :  4
+ 
  Thread id:  0x6f80 :  5
+ 
  Thread id:  0x6f80 :  6
+ 
  Thread id:  0x6f80 :  7
+ 
  Thread id:  0x6f80 :  8
+ 
  Thread id:  0x6f80 :  9
+ 
  Thread id:  0x6f80 :  10
+ 
  Thread id:  0x6f80 :  11
+ 
  Thread id:  0x6f80 :  12
+ 
  Thread id:  0x6f80 :  13
 Thread is finished
