@@ -13,6 +13,10 @@ void MyWorker::run()
     {
         m_myClass->doWork(m_name);
 
+        myMetaType message(m_name, m_myClass->getCounter());
+
+        emit sendSignal(message);
+
         sleep(1);
     }
 }

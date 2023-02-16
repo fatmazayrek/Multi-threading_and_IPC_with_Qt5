@@ -14,10 +14,7 @@ public:
     explicit MyWorker(QString name, MyClass *myClass ,QObject *parent = nullptr);
 
 signals:
-    void sendSignal(myMetaType mt);
-
-    void sendName(QString name);
-    void sendCounter(int counter);
+    void sendSignal(myMetaType message);
 
 private:
     MyClass *m_myClass;

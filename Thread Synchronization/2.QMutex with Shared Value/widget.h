@@ -21,6 +21,9 @@ public:
 private slots:
     void on_start_clicked();
 
+    void changeLineEdit1(myMetaType message);
+    void changeLineEdit2(myMetaType message);
+
 private:
     Ui::Widget *ui;
     MyWorker *worker1;

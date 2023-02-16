@@ -16,8 +16,8 @@
   <widget class="QPushButton" name="start">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>240</y>
+     <x>90</x>
+     <y>230</y>
      <width>231</width>
      <height>21</height>
     </rect>
@@ -25,6 +25,24 @@
    <property name="text">
     <string>Click to Start</string>
    </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>210</y>
+     <width>361</width>
+     <height>57</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="lineEdit"/>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_2"/>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
