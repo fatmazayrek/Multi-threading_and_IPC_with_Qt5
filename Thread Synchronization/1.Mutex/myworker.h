@@ -4,16 +4,18 @@
 #include <QObject>
 #include <QThread>
 #include <QMutex>
+#include <QMutexLocker>
 
 class MyWorker : public QThread
 {
     Q_OBJECT
 public:
-    explicit MyWorker(int number, QMutex *mutex, bool *stop, QObject *parent = nullptr);
+    explicit MyWorker(int number, QMutex *mutex, bool *stop,
+                      QObject *parent = nullptr);
+    ~MyWorker();
 
 signals:
-    void emitNumber(QString number);
-
+    void writeNumber(QString);
     // QThread interface
 protected:
     void run();
@@ -21,7 +23,7 @@ protected:
 private:
     int m_number;
     bool *m_stop;
-    QMutex *m_mutex;
+    QMutex *mutex;
 };
 
 #endif // MYWORKER_H

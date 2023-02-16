@@ -7,29 +7,31 @@ Widget::Widget(QWidget *parent)
 {
     ui->setupUi(this);
 
+
     flag = false;
 
-    worker1 = new MyWorker(10, mutex, &flag, this);
-    worker2 = new MyWorker(20, mutex, &flag, this);
+    worker = new MyWorker(12, &mutex, &flag, this);
+    worker1 = new MyWorker(23, &mutex, &flag, this);
 
-    connect(worker1, &MyWorker::emitNumber, this, &Widget::addfromThread);
-    connect(worker2, &MyWorker::emitNumber, this, &Widget::addfromThread);
+    connect(worker, &MyWorker::writeNumber, this, &Widget::writeOntheConsol);
+    connect(worker1, &MyWorker::writeNumber, this, &Widget::writeOntheConsol);
 }
 
 Widget::~Widget()
 {
     delete ui;
+
+    de
 }
 
-void Widget::addfromThread(QString text)
+void Widget::writeOntheConsol(const QString text)
 {
     ui->textEdit->append(text);
 }
 
-
-void Widget::on_startButton_clicked()
+void Widget::on_start_clicked()
 {
+    worker->start();
     worker1->start();
-    worker2->start();
 }
 

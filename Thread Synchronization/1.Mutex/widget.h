@@ -19,16 +19,15 @@ public:
     ~Widget();
 
 private slots:
-    void addfromThread(QString text);
+    void writeOntheConsol(const QString text);
 
-    void on_startButton_clicked();
+    void on_start_clicked();
 
 private:
     Ui::Widget *ui;
-
-    bool flag;
-    QMutex *mutex;
+    MyWorker *worker;
     MyWorker *worker1;
-    MyWorker *worker2;
+    QMutex mutex;
+    bool flag;
 };
 #endif // WIDGET_H
