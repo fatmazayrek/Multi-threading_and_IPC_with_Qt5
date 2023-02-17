@@ -1,4 +1,4 @@
-Hi everyone
+Hi everyone:alien:
 
 In this example, I showed you using of QThread::create() with functions :ghost:
 
