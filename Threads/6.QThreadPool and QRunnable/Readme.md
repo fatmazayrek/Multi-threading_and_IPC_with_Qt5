@@ -1,6 +1,8 @@
 Hello everyone:relaxed:
 
-In this example I created a simple Widget example.
+In this example, I showed you how to use QThreadPool:collision:
+
+I created a simple Widget example.
 
 I put 2 buttons and each button starts its own thread. When you clicked the _Start Count_ button LCD count down or when you click the _Start Timer_ Timer starts counting:dizzy:
 
