@@ -1,6 +1,6 @@
 Hi everyone:giraffe:
 
-In this example, I showed you how shouldn't use Signal and slots between threads with simple Widget application:fish:
+In this example, I showed you how couldn't use Signal and slots between threads with simple Widget application:fish:
 
 In this application, a thread contains QTimer. This tread is especially created in the main thread but run method starts in the thread:lock: 
 
