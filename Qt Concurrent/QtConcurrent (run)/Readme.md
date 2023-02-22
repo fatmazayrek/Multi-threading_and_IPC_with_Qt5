@@ -1,6 +1,6 @@
 Hi everyone:nazar_amulet:	
 
-In this example, I simply showed you how to use QtConcurrent::run() method:next_track_button:	top 
+In this example, I simply showed you how to use QtConcurrent::run() method :next_track_button:	
 
 Before using the QtConcurrent, you must add "QT += concurrent" into the .pro file :arrow_forward:
 
