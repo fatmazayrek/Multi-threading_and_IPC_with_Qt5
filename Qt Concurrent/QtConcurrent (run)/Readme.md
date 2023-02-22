@@ -2,7 +2,7 @@ Hi everyone:nazar_amulet:
 
 In this example, I simply showed you how to use QtConcurrent::run() method :next_track_button:	
 
-Before using the QtConcurrent, you must add "QT += concurrent" into the .pro file :arrow_forward:
+Before using the QtConcurrent, you must add **QT += concurrent** into the .pro file :arrow_forward:
 
 In this Wisget application, I added 4 Buttons: Start, Stop, Resume and Cancal. These buttons are useless except the Start button.:no_entry:
 
