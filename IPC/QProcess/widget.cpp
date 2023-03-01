@@ -16,7 +16,6 @@ Widget::Widget(QWidget *parent)
     myProcess = new QProcess(this);
 
     connect(myProcess, &QProcess::started, this, &Widget::started);
-    connect(myProcess, &QProcess::finished, this, &Widget::finished);
 }
 
 Widget::~Widget()
@@ -63,12 +62,6 @@ void Widget::on_start_clicked()
 void Widget::on_stop_clicked()
 {
     myProcess->close();
-}
-
-void Widget::finished(int exitCode)
-{
-    qDebug() << "exitCode: " << exitCode;
-//    qDebug() << "exitStatus: " << exitStatus;
 }
 
 void Widget::started()

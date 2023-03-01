@@ -21,7 +21,6 @@ private slots:
     void on_start_clicked();
     void on_stop_clicked();
 
-    void finished(int exitCode);
     void started();
 
 private:
