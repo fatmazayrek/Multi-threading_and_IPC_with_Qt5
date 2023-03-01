@@ -12,4 +12,6 @@ Then ıf you click the _Start_ button, .exe file starts or if you click the _Sto
 
 *Note:* If you click the _Start_ button without choosing a file, a MessageBox opens💮
 
+![image](https://user-images.githubusercontent.com/91613858/222073146-ec336292-6c37-4556-9c8f-88d7499907a2.png)
+
 I hope it helps your studies😊
