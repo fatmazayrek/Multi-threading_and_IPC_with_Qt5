@@ -20,8 +20,6 @@ Widget::Widget(QWidget *parent)
 Widget::~Widget()
 {
     delete ui;
-
-    de
 }
 
 void Widget::writeOntheConsol(const QString text)
