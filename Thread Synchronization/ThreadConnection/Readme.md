@@ -1,4 +1,4 @@
-Hi everuyoe:smile:
+Hi everyone:smile:
 
 In this example, I did a simple Widget example with 2 interconnected Threads:hammer_and_wrench:	
 
